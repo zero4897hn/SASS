@@ -1,0 +1,19 @@
+$doRongNoiDung: 1000px;
+$khoangCachCot: 30px;
+.noi-dung {
+	width: $doRongNoiDung;
+	margin: auto;
+	background-color: brown;
+	height: 500px;
+	.cot {
+		background: lightblue;
+		padding: 20px;
+		box-sizing: border-box; //Không làm giãn nở chiều dài, rộng
+		width: ($doRongNoiDung - 2*$khoangCachCot)/3; 
+		margin-right: $khoangCachCot;
+		float: left;
+		&:last-child {
+			margin-right: 0px;
+		}
+	}
+}

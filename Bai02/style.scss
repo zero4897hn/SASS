@@ -1,0 +1,55 @@
+$mauXanh: #699;
+$co1: 13px;
+$mauHong: #c69;
+$fontChu: "seoge ui light";
+
+@mixin anhCanTrai() {
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+}
+
+@mixin anhCanTrai2($marPhai) {
+	float: left;
+	width: 100px;
+	margin-right: $marPhai;
+}
+
+.jumbotron {
+	width: 900px;
+	margin: auto;
+	background: $mauXanh;
+	img {
+		@include anhCanTrai2(5px);
+	}
+	h1 {
+		color: $mauHong;
+		&:hover {
+			color: black;
+		}
+		&:after {
+			content: " Code này được thêm bởi css";
+		}
+		&:before {
+			content: "Hello ";
+
+		}
+	}
+	p {
+		color: #414141;
+		font: {
+			family: $fontChu;
+			size: $co1;
+			weight: bold;
+			style: italic;
+		};
+	}
+}
+
+.khac {
+	width: 500px;
+	margin: auto;
+	img {
+		@include anhCanTrai2(30px);
+	}
+}

@@ -1,0 +1,42 @@
+@charset "UTF-8";
+.jumbotron {
+  width: 900px;
+  margin: auto;
+  background: #699;
+}
+.jumbotron img {
+  float: left;
+  width: 100px;
+  margin-right: 5px;
+}
+.jumbotron h1 {
+  color: #c69;
+}
+.jumbotron h1:hover {
+  color: black;
+}
+.jumbotron h1:after {
+  content: " Code này được thêm bởi css";
+}
+.jumbotron h1:before {
+  content: "Hello ";
+}
+.jumbotron p {
+  color: #414141;
+  font-family: "seoge ui light";
+  font-size: 13px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.khac {
+  width: 500px;
+  margin: auto;
+}
+.khac img {
+  float: left;
+  width: 100px;
+  margin-right: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */
